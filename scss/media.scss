@@ -40,11 +40,23 @@
 		.quote:before {
 			top: 7px;
 		}
+		.header {
+			.bottom-header .container {
+				nav {
+					display: block;
+					background-color: $black;
+				}
+				.nav-mobile-first {
+					display: none;
+				}
+			}
+			.top-header .right {
+				display: block;
+			}
+		}
 	}
-}
-@media(min-width: 1000px) {
-	.container {
-		width: 100rem;
+	.search {
+		width: 62%;
 	}
 	.images {
 		text-align: left; 
@@ -56,21 +68,12 @@
 		}
 	}
 }
-@media(min-width: 1200px) {
-	.header {
-		.bottom-header .container {
-			nav {
-				display: block;
-				.navigation: {
-					display: block;
-				}
-			}
-			.nav-mobile-first {
-				display: none;
-			}
-		}
-		.top-header .right {
-			display: block;
-		}
+
+@media(min-width: 1040px) {
+	.container {
+		width: 100rem;
+	}
+	.search {
+		width: 70%;
 	}
 }

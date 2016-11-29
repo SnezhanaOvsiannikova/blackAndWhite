@@ -22,10 +22,17 @@
     body .menu {
       display: none; }
     body .quote:before {
-      top: 7px; } }
-@media (min-width: 1000px) {
-  .container {
-    width: 100rem; }
+      top: 7px; }
+    body .header .bottom-header .container nav {
+      display: block;
+      background-color: #000; }
+    body .header .bottom-header .container .nav-mobile-first {
+      display: none; }
+    body .header .top-header .right {
+      display: block; }
+
+  .search {
+    width: 62%; }
 
   .images {
     text-align: left; }
@@ -33,13 +40,11 @@
       margin-left: 1rem; }
       .images li:first-child {
         margin-left: 0; } }
-@media (min-width: 1200px) {
-  .header .bottom-header .container nav {
-    display: block;
-    .navigation-display: block; }
-  .header .bottom-header .container .nav-mobile-first {
-    display: none; }
-  .header .top-header .right {
-    display: block; } }
+@media (min-width: 1040px) {
+  .container {
+    width: 100rem; }
+
+  .search {
+    width: 70%; } }
 
 /*# sourceMappingURL=media.css.map */
