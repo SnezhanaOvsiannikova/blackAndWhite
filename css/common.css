@@ -274,7 +274,14 @@ form {
       .header .top-header .left .logo {
         background: url(../images/logo.png) no-repeat;
         height: 4.1rem;
-        width: 15.2rem; }
+        width: 15.2rem;
+        position: relative;
+        text-indent: -999rem;
+        overflow: hidden; }
+        .header .top-header .left .logo a {
+          width: 100%;
+          height: 100%;
+          display: block; }
     .header .top-header .right {
       display: none;
       float: right;
