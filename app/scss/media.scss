@@ -1,0 +1,79 @@
+@import "variables.scss";
+
+@media(min-width: 585px) {
+	.table-holder {
+		overflow: hidden;
+	}
+}
+
+@media(min-width: 475px) {
+	form {
+		width: 30.5rem;
+		.holder {
+			.input-field, .custom-search {
+				width: 22.3rem;
+			}
+		}
+	}
+}
+	
+@media(min-width: 768px) {
+	h2, h3 {
+		text-align: left;
+	}
+	.images li {
+		margin-left: 2rem;
+	}
+}
+
+@media(min-width: 920px) {
+	body {
+		font-size: 1.3rem;
+		line-height: 1.7rem;
+		.header .bottom-header .container .banner {
+			font-size: 1.2rem;
+			line-height: 1.3rem;
+		}	
+		.menu {
+			display: none;
+		}
+		.quote:before {
+			top: 8px;
+		}
+		.header {
+			.bottom-header .container {
+				nav {
+					display: block;
+					background-color: $black;
+				}
+				.nav-mobile-first {
+					display: none;
+				}
+			}
+			.top-header .right {
+				display: block;
+			}
+		}
+	}
+	.search {
+		width: 62%;
+	}
+	.images {
+		text-align: left; 
+		li {
+			margin-left: 2.1rem;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+@media(min-width: 1040px) {
+	.container {
+		width: 100rem;
+	}
+	.search {
+		width: 70%;
+	}
+}

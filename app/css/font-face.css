@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'ArialRegular';
+  src: url("../fonts/arial-regular/Arial-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ArialBold';
+  src: url("../fonts/arial-bold/arial_bold-webfont.eot");
+  src: url("../fonts/arial-bold/arial_bold-webfont.woff2") format("woff2"), url("../fonts/arial-bold/arial_bold-webfont.woff") format("woff"), url("../fonts/arial-bold/arial_bold.ttf") format("truetype"), url("../fonts/arial-bold/arial_bold-webfont.svg") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ArialItalic';
+  src: url("../fonts/arial-italic/arial_italic-webfont.eot");
+  src: url("../fonts/arial-italic/arial_italic-webfont.woff2") format("woff2"), url("../fonts/arial-italic/arial_italic-webfont.woff") format("woff"), url("../fonts/arial-italic/arial_italic.ttf") format("truetype"), url("../fonts/arial-italic/arial_italic-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: italic; }
