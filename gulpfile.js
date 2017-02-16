@@ -3,13 +3,13 @@ var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 
 gulp.task('sass', function() {
-	return gulp.src('./app/scss/*.scss')
+	return gulp.src('./scss/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./app/css'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('sass:watch', function() {
-	return gulp.watch('./app/scss/*.scss', ['sass']);
+	return gulp.watch('./scss/*.scss', ['sass']);
 });
 
 gulp.task('jade', function() {
@@ -19,18 +19,18 @@ gulp.task('jade', function() {
 		basedir: __dirname
 	};
  
-	gulp.src('./app/html/*.jade')
+	gulp.src('./index.jade')
 		.pipe(jade(config))
-		.pipe(gulp.dest('./app/html/'));
-
-    gulp.src('./app/html/**/*.jade')
+		.pipe(gulp.dest('./'));
+	gulp.src('./includes/*.jade')
     	.pipe(jade(config))
-    	.pipe(gulp.dest('./app/html/'));
+    	.pipe(gulp.dest('./includes/'));
+
 });
 
 gulp.task('jade:watch', function() {
-  gulp.watch('./app/html/*.jade', ['jade']);
-  gulp.watch('./app/html/**/*.jade', ['jade']);
+  gulp.watch('includes/*jade', ['jade']);
+  gulp.watch('./index.jade', ['jade']);
 });
 
 gulp.task('start', ['sass', 'sass:watch', 'jade', 'jade:watch']);
